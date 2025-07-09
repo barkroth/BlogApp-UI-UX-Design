@@ -95,10 +95,7 @@ export default function CommentsSection({
   };
 
   return (
-    <div
-      id="yorumlar"
-      className="py-16 bg-white dark:bg-gray-900/50 backdrop-blur-md"
-    >
+    <div id="yorumlar" className="py-16 bg-inherit backdrop-blur-md">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-3">
@@ -295,7 +292,7 @@ export default function CommentsSection({
                       viewport={{ once: true }}
                       transition={{ duration: 0.3, delay: index * 0.1 }}
                       key={index}
-                      className="relative p-5 rounded-xl bg-gray-50 dark:bg-gray-800/80 border border-gray-100 dark:border-gray-700 hover:shadow-md transition-shadow duration-300"
+                      className="relative p-5 rounded-xl bg-inherit border border-gray-100 dark:border-gray-700 hover:shadow-md transition-shadow duration-300"
                     >
                       <div className="absolute top-0 right-0 h-16 w-16 bg-orange-50 dark:bg-orange-900/10 rounded-bl-xl rounded-tr-xl z-0"></div>
 

@@ -41,7 +41,7 @@ export default function Footer({
       <div className="absolute top-1/4 left-1/4 w-6 h-6 rounded-full bg-orange-400/10"></div>
       <div className="absolute top-2/3 right-1/3 w-4 h-4 rounded-full bg-red-400/20"></div>
 
-      <div className="container mx-auto px-6 sm:px-10 relative z-10">
+      <div className="container mx-auto px-6 sm:px-10 relative z-10 bg-inherit">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mb-16">
           {/* About Section */}
           <motion.div
