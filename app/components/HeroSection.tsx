@@ -7,19 +7,22 @@ type HeroSectionProps = {
   scrollToElement: (id: string) => void;
 };
 
-export default function HeroSection({ scrollY, scrollToElement }: HeroSectionProps) {
+export default function HeroSection({
+  scrollY,
+  scrollToElement,
+}: HeroSectionProps) {
   return (
     <div className="relative h-[90vh] overflow-hidden">
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat" 
-        style={{ 
-          backgroundImage: "url('/images/japonya75.jpeg')", 
+      <div
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{
+          backgroundImage: "url('/images/Japonya75.jpeg')",
           transform: `translateY(${scrollY * 0.4}px)`,
-          filter: "brightness(0.6) saturate(1.2)"
+          filter: "brightness(0.6) saturate(1.2)",
         }}
       ></div>
       <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/80"></div>
-      
+
       <div className="relative flex flex-col items-center justify-center h-full text-center px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -31,8 +34,9 @@ export default function HeroSection({ scrollY, scrollToElement }: HeroSectionPro
             Mehmet'in Objektifinden Dünya
           </h1>
           <p className="text-xl text-gray-200 mb-8 max-w-2xl mx-auto">
-            Dünyanın farklı köşelerinden fotoğraflarla dolu bir seyahat günlüğü. 
-            Japonya'dan İspanya'ya, Sırbistan'dan İtalya'ya uzanan yolculuğuma ortak olun.
+            Dünyanın farklı köşelerinden fotoğraflarla dolu bir seyahat günlüğü.
+            Japonya'dan İspanya'ya, Sırbistan'dan İtalya'ya uzanan yolculuğuma
+            ortak olun.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <motion.button
@@ -59,14 +63,14 @@ export default function HeroSection({ scrollY, scrollToElement }: HeroSectionPro
             </motion.button>
           </div>
         </motion.div>
-        
-        <motion.div 
-          animate={{ y: [0, 10, 0], opacity: [0.6, 1, 0.6] }} 
+
+        <motion.div
+          animate={{ y: [0, 10, 0], opacity: [0.6, 1, 0.6] }}
           transition={{ repeat: Infinity, duration: 2 }}
           className="absolute bottom-6"
         >
-          <button 
-            onClick={() => scrollToElement("countries")} 
+          <button
+            onClick={() => scrollToElement("countries")}
             className="text-white p-2 rounded-full"
           >
             <FiArrowDown size={28} />
@@ -75,4 +79,4 @@ export default function HeroSection({ scrollY, scrollToElement }: HeroSectionPro
       </div>
     </div>
   );
-} 
+}
