@@ -64,7 +64,7 @@ export default function Footer({
                 <img
                   src="/logo.jpg"
                   alt="Mehmet Deviren"
-                  className="relative w-16 h-16 rounded-full object-cover"
+                  className="relative w-16 h-16 rounded-full object-cover bg-inherit"
                 />
               </div>
               <div>
@@ -294,7 +294,7 @@ export default function Footer({
                 <img
                   src="/logo.jpg"
                   alt="Logo"
-                  className="relative w-8 h-8 rounded-full object-cover"
+                  className="relative w-8 h-8 rounded-full object-cover bg-inherit"
                 />
               </div>
               <span className="text-sm font-medium bg-gradient-to-r from-orange-400 to-red-500 bg-clip-text text-transparent">

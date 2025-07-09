@@ -112,7 +112,7 @@ export default function PhotoModal({
                     <img
                       src={photo.img}
                       alt={`${photo.country} - ${index + 1}`}
-                      className="max-h-[75vh] max-w-full object-contain rounded-xl shadow-2xl border border-white/10 group-hover:scale-[1.01] transition-transform duration-300 mx-auto"
+                      className="max-h-[75vh] max-w-full object-contain rounded-xl shadow-2xl border border-white/10 group-hover:scale-[1.01] transition-transform duration-300 mx-auto bg-inherit"
                     />
                     <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
                       <div className="text-white">

@@ -77,7 +77,6 @@ const photos = [
     img: "/images/Japonya15.jpeg",
     country: "Japonya",
   },
-  
   {
     img: "/images/Japonya16.jpeg",
     country: "Japonya",
@@ -433,7 +432,7 @@ const photos = [
   {
     img: "/images/sevilla7.jpeg",
     country: "İspanya",
-  },  
+  },
   {
     img: "/images/floransa1.jpeg",
     country: "İtalya",
@@ -773,8 +772,9 @@ export async function GET(request: Request) {
 
   const country = searchParams.get("country");
 
-  const filteredPhotos = country ? photos.filter((photo) => photo.country === country) : photos;
+  const filteredPhotos = country
+    ? photos.filter((photo) => photo.country === country)
+    : photos;
 
   return NextResponse.json(filteredPhotos);
 }
-

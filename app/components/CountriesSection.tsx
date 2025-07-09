@@ -55,7 +55,7 @@ export default function CountriesSection({
                   transition={{ duration: 0.5 }}
                   src={country.image}
                   alt={country.alt}
-                  className="object-cover w-full h-full transition-all duration-500"
+                  className="object-cover w-full h-full transition-all duration-500 bg-inherit"
                 />
               </div>
 

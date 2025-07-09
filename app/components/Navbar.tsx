@@ -38,7 +38,7 @@ export default function Navbar({
             <img
               src="/logo.jpg"
               alt="Logo"
-              className="h-10 w-10 rounded-full object-cover cursor-pointer shadow-md"
+              className="h-10 w-10 rounded-full object-cover cursor-pointer shadow-md bg-inherit"
             />
           </motion.div>
           <motion.button
